@@ -9,7 +9,7 @@ import (
 func main() {
 	bind := fmt.Sprintf(":%s", os.Getenv("PORT"))
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hai from test"))
+		w.Write([]byte("hai from tes"))
 	})
 
 	http.ListenAndServe(bind, nil)
